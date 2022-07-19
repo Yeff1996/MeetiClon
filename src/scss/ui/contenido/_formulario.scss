@@ -1,0 +1,40 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.formulario{
+    padding: 2rem 0;
+    background-color: v.$grisClaro;
+
+    &__heading{
+        text-align: center;
+        color: v.$gris;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include m.tablet { 
+            flex-direction: row;
+        } 
+    }
+
+    &__campo{
+        padding: 1rem;
+        border: 1px solid v.$gris;
+
+        @include m.tablet { 
+            flex-grow: 1;
+        } 
+    }
+
+    &__submit{
+        @include m.boton(v.$primario, v.$blanco);
+        margin: 0;
+
+        @include m.tablet { 
+            flex-grow: 1;
+        } 
+    }
+}

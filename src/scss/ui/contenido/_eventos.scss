@@ -1,0 +1,54 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.eventos{
+    padding: 5rem 0;
+
+    &__heading{
+        text-align: center;
+        color: v.$gris;
+    }
+
+    &__grid{
+        @include m.grid(1, 2rem);
+
+        @include m.tablet { 
+            @include m.grid(3, 2rem);
+        } 
+    }
+}
+
+.evento{
+    border: 1px solid v.$grisClaro;
+
+    &__contenido{
+        padding: 2rem;
+    }
+
+    &__fecha{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    &__heading{
+        color: v.$gris;
+        margin: 1rem 0;
+    }
+
+    &__autor{
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        align-items: center;
+        gap: 2rem;
+
+        &-imagen{
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &-span{
+            display: block;
+            font-weight: bold;
+        }
+    }
+}

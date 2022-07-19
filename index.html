@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeti</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <picture>
+                <source srcset="build/img/logo.avif" type="image/avif">
+                <source srcset="build/img/logo.webp" type="image/webp">
+                <img loading="lazy" src="build/img/logo.png" alt="logo">
+            </picture>
+        </div>
+
+        <nav class="navegacion">
+            <a class="navegacion__enlace navegacion__enlace--activo" href="#">Crear Grupo</a>
+            <a class="navegacion__enlace" href="#">Iniciar Sesión</a>
+            <a class="navegacion__enlace" href="#">Registrarse</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__contenido contenedor">
+            <h1 class="hero__heading">
+                Encuentra o Crea un grupo para compartir lo que más te gusta
+            </h1>
+
+            <a class="hero__boton" href="#">Obtener una cuenta</a>
+        </div>
+    </section>
+    
+    <section class="formulario contenedor">
+        <h2 class="formulario__heading">Busca un grupo en tu ciudad</h2>
+
+        <form class="formulario__form">
+            <select class="formulario__campo">
+                <option>Programación</option>
+                <option>Diseño</option>
+                <option>Negocios</option>
+                <option>Moda</option>
+                <option>Ejercicio y Salud</option>
+                <option>Fotografía</option>
+                <option>Comida</option>
+                <option>Diseño Interior</option>
+                <option>Café</option>
+                <option>Cine</option>
+                <option>Libros</option>
+                <option>Emprendimiento</option>
+            </select>
+
+            <input type="text" class="formulario__campo" placeholder="Nombre o Evento">
+
+            <input type="text" class="formulario__campo" placeholder="Ciudad o País">
+
+            <input type="submit" class="formulario__submit" value="Buscar">
+        </form>
+    </section>
+
+    <section class="eventos contenedor">
+        <h2 class="eventos__heading">Próximos eventos</h2>
+
+        <div class="eventos__grid">
+            <a class="evento" href="#">
+                <div class="evento__container">
+                    <div class="evento__imagenDiv">
+                        <picture>
+                            <source srcset="build/img/imagen1.avif" type="image/avif">
+                            <source srcset="build/img/imagen1.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/imagen1.jpg" alt="imagen evento" width="100%">
+                        </picture>
+                    </div>
+    
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">
+                            Jueves 30 de Septiembre de 2022
+                        </p>
+
+                        <h3 class="evento__heading">
+                            Ideas de Negocios
+                        </h3>
+
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <picture>
+                                    <source srcset="build/img/perfil1.avif" type="image/avif">
+                                    <source srcset="build/img/perfil1.webp" type="image/webp">
+                                    <img loading="lazy" src="build/img/perfil1.jpg" alt="imagen de perfil">
+                                </picture>
+                            </div>
+
+                            <p class="evento__autor-info">
+                                <span class="evento__autor-span">Organizado por:</span>
+                                Yeferson David Mendoza
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="evento" href="#">
+                <div class="evento__container">
+                    <div class="evento__imagenDiv">
+                        <picture>
+                            <source srcset="build/img/imagen2.avif" type="image/avif">
+                            <source srcset="build/img/imagen2.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/imagen2.jpg" alt="imagen evento" width="100%">
+                        </picture>
+                    </div>
+    
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">
+                            Lunes 02 de Octubre de 2022
+                        </p>
+
+                        <h3 class="evento__heading">
+                            Bitcoin y otras Criptos
+                        </h3>
+
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <picture>
+                                    <source srcset="build/img/perfil1.avif" type="image/avif">
+                                    <source srcset="build/img/perfil1.webp" type="image/webp">
+                                    <img loading="lazy" src="build/img/perfil1.jpg" alt="imagen de perfil">
+                                </picture>
+                            </div>
+
+                            <p class="evento__autor-info">
+                                <span class="evento__autor-span">Organizado por:</span>
+                                Yeferson David Mendoza
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="evento" href="#">
+                <div class="evento__container">
+                    <div class="evento__imagenDiv">
+                        <picture>
+                            <source srcset="build/img/imagen3.avif" type="image/avif">
+                            <source srcset="build/img/imagen3.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/imagen3.jpg" alt="imagen evento" width="100%">
+                        </picture>
+                    </div>
+    
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">
+                            Miércoles 04 de Octubre de 2022
+                        </p>
+
+                        <h3 class="evento__heading">
+                            Pizza paso a paso
+                        </h3>
+
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <picture>
+                                    <source srcset="build/img/perfil2.avif" type="image/avif">
+                                    <source srcset="build/img/perfil2.webp" type="image/webp">
+                                    <img loading="lazy" src="build/img/perfil2.jpg" alt="imagen de perfil">
+                                </picture>
+                            </div>
+
+                            <p class="evento__autor-info">
+                                <span class="evento__autor-span">Organizado por:</span>
+                                Luigi Torrealba
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="categorias contenedor">
+        <h2 class="categorias__heading">Categorías</h2>
+
+        <ul class="categorias__grid">
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_1.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Programación</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_2.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Diseño UX y UI</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_3.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Negocios e Ideas</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_4.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Ropa y Moda</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_5.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Ejercicio y Bienestar</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_6.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Fotografía</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_7.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Comida</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_8.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Diseño Interior</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_9.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Café</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_10.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Cine</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_11.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Libros</p>
+            </li>
+
+            <li class="categoria">
+                <img class="categoria__imagen" src="build/img/categoria_12.jpg" alt="imagen categoria">
+                <p class="categoria__nombre">Emprendimiento</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="grupos">
+        <div class="grupos__grid contenedor">
+            <div class="grupo">
+                <h3 class="grupo__heading">Crea un Grupo</h3>
+                <p class="grupo__texto">
+                    Comparte lo que te gusta o tu pasión con los demás, crea tu propio 
+                    grupo y eventos; hoy mismo sin costos
+                </p>
+            </div>
+
+            <div class="grupo">
+                <h3 class="grupo__heading">Únete a un grupo</h3>
+                <p class="grupo__texto">
+                    Conoce personas con tus mismos gustos y pasiones, únete a un grupo 
+                    ya existente y asiste a próximos eventos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer contenedor">
+        <nav class="navegacion">
+            <a class="navegacion__enlace navegacion__enlace--activo" href="#">Crear Grupo</a>
+            <a class="navegacion__enlace" href="#">Iniciar Sesión</a>
+            <a class="navegacion__enlace" href="#">Registrarse</a>
+        </nav>
+
+        <p class="footer__copy">
+            Todos los derechos reservados. Meeti &copy;
+        </p>
+    </footer>
+</body>
+</html>
